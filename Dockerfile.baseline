@@ -1,0 +1,8 @@
+# Naive single-stage image, kept only to reproduce the "before" size in the README.
+# The production image is built from ./Dockerfile.
+FROM python:3.12
+WORKDIR /app
+COPY . .
+RUN pip install -r requirements-dev.txt
+EXPOSE 5000
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app.main:app"]

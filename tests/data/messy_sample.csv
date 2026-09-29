@@ -1,0 +1,14 @@
+id,name,email,age,signup_date,salary
+1,"  alice smith ",ALICE@Example.com,29,2023-01-15,"$55,000"
+2,bob jones,bob@example.com,,15/02/2023,62000
+3,carol white,carol@example,41,2023-03-10,71000
+4,dave brown,dave@example.com,thirty,2023/04/05,48000.5
+5,eve black,eve@example.com,35,2023-05-20,
+5,eve black,eve@example.com,35,2023-05-20,
+6,,frank@example.com,52,2023-06-01,83000
+,grace lee,grace@example.com,27,2023-07-12,59000
+7,henry ford,"HENRY@example.com ",150,2023-08-08,67000
+8,ivy chen,ivy@example.com,31,not-a-date,52000
+9,jack king,jack@example.com,45,2023-09-30,abc
+2,bob jones duplicate,bob2@example.com,33,2023-02-16,61000
+10,kate moss,kate@example.com,38,2023-10-10,75000
