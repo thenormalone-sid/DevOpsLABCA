@@ -14,6 +14,8 @@ permissions:
 env:
   APP_PORT: 5000
   PYTHON_VERSION: "3.12"
+  # GHCR image names must be lowercase; the repo owner (thenormalone-sid) already is.
+  IMAGE: ghcr.io/${{ github.repository_owner }}/dataguard
 
 jobs:
   build-test-scan-deploy:
@@ -41,10 +43,6 @@ jobs:
 
       - name: Data Quality Tests
         run: pytest tests/test_golden_data.py -v
-
-      - name: Set Image Name
-        run: |
-          echo "IMAGE=ghcr.io/$(echo '${{ github.repository_owner }}' | tr '[:upper:]' '[:lower:]')/dataguard" >> "$GITHUB_ENV"
 
       - name: Build Docker Image
         run: |
